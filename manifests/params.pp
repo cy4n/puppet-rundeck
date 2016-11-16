@@ -14,13 +14,11 @@ class rundeck::params {
       $package_name = 'rundeck'
       $package_ensure = 'latest'
       $service_name = 'rundeckd'
-      $deb_download = true
     }
     'RedHat', 'Amazon': {
       $package_name = 'rundeck'
       $package_ensure = 'installed'
       $service_name = 'rundeckd'
-      $deb_download = false
     }
     default: {
       fail("${::operatingsystem} not supported")

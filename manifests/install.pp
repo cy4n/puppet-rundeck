@@ -9,7 +9,7 @@
 class rundeck::install(
   $package_ensure     = $rundeck::package_ensure,
   $package_source     = $rundeck::package_source,
-  $rdeck_home         = $rundeck::rdeck_home
+  $rdeck_home         = $rundeck::rdeck_home,
 ) {
 
   if $caller_module_name != $module_name {
