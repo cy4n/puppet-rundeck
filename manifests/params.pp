@@ -12,16 +12,14 @@ class rundeck::params {
   case $::osfamily {
     'Debian': {
       $package_name = 'rundeck'
-      $package_ensure = '2.5.1-1-GA'
+      $package_ensure = '2.5.1'
       $service_name = 'rundeckd'
-      $manage_yum_repo = false
       $deb_download = true
     }
     'RedHat', 'Amazon': {
       $package_name = 'rundeck'
       $package_ensure = 'installed'
       $service_name = 'rundeckd'
-      $manage_yum_repo = true
       $deb_download = false
     }
     default: {
