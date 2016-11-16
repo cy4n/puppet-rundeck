@@ -12,7 +12,7 @@ class rundeck::params {
   case $::osfamily {
     'Debian': {
       $package_name = 'rundeck'
-      $package_ensure = '2.5.1'
+      $package_ensure = 'latest'
       $service_name = 'rundeckd'
       $deb_download = true
     }
